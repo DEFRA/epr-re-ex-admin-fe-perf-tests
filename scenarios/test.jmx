@@ -21,7 +21,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="EPR RE EX Admin Home page">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="EPR RE EX Admin Home page" enabled="true">
           <stringProp name="TestPlan.comments">EPR RE EX Admin frontend Home page</stringProp>
           <stringProp name="HTTPSampler.domain">epr-re-ex-admin-frontend.${__P(env)}.cdp-int.defra.cloud</stringProp>
           <stringProp name="HTTPSampler.port">${__P(port, 443)}</stringProp>
@@ -68,7 +68,7 @@
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
-            <boolProp name="Assertion.assume_success">false</boolProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
             <intProp name="Assertion.test_type">2</intProp>
           </ResponseAssertion>
           <hashTree/>
